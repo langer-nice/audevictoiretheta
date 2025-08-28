@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Formations ThetaHealing — Base, Avancé, Dig Deeper</title>
+<meta name="description" content="Découvrez les formations ThetaHealing et réservez votre place en quelques clics." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="canonical" href="https://example.com/formations"/>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Formations ThetaHealing — Base, Avancé, Dig Deeper" />
+<meta property="og:description" content="Découvrez les formations ThetaHealing et réservez votre place en quelques clics." />
+<meta property="og:image" content="assets/portrait.svg" />
+<meta name="theme-color" content="#7C3AED" />
+<script defer src="script.js"></script>
+<!-- JSON-LD minimal Course data for SEO on Formations page -->
+<script type='application/ld+json'>{"@context": "https://schema.org", "@type": "Course", "name": "Formations ThetaHealing", "provider": {"@type": "Person", "name": "Votre Nom"}, "description": "Découvrir et pratiquer le ThetaHealing : Base, Avancé, Dig Deeper."}</script>
+</head>
+<body>
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a class="brand" href="index.html" aria-label="Accueil ThetaHealing">
+      <img src="assets/logo-2-trans.svg" alt="Logo ThetaHealing"/>
+      <strong>Aude Victoire Theta</strong>
+    </a>
+    <button class="mobile-toggle" aria-label="Menu">☰</button>
+    <nav class="navlinks">
+      <a href="index.html" >Accueil</a>
+      <a href="formations.html" aria-current="page">Formations</a>
+      <a href="qui-je-suis.html" >Qui je suis</a>
+      <a class="nav-cta" href="formations.html#reservation">Réserver</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+      <img src="assets/logo-2-trans.svg" alt="ThetaHealing Logo" style="width: 90px; margin-bottom: 2rem;" />
+      <h1 class="headline">Formations ThetaHealing</h1>
+      <p class="lede">Des parcours structurés et accessibles pour développer vos compétences énergétiques et accompagner vos clients.</p>
+      <div class="hero-cta">
+        <a class="button primary" href="#reservation">Réserver une place</a>
+        <a class="button secondary" href="#programme">Voir le programme</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="programme" class="section">
+    <div class="container">
+      <h2>Parcours</h2>
+      <div class="grid cols-3 mt-m">
+        <article class="card">
+          <img src="assets/formation-1.jpg" alt="Formation Base" style="width:100%;height:auto;border-radius:12px 12px 0 0;object-fit:cover;max-height:160px;" />
+          <h3>Base</h3>
+          <p>Initiation aux fondements du ThetaHealing&nbsp;: connexion, croyances, lecture intuitive.</p>
+          <p><strong>Prix&nbsp;:</strong> 550€ · <strong>Durée&nbsp;:</strong> 2 jours</p>
+          <a class="button secondary mt-s" href="#reservation">S'inscrire</a>
+        </article>
+        <article class="card">
+          <img src="assets/formation-1.jpg" alt="Formation Avancé" style="width:100%;height:auto;border-radius:12px 12px 0 0;object-fit:cover;max-height:160px;" />
+          <h3>Avancé</h3>
+          <p>Approfondissement&nbsp;: travail émotionnel, downloads, pratiques guidées.</p>
+          <p><strong>Prix&nbsp;:</strong> 650€ · <strong>Durée&nbsp;:</strong> 3 jours</p>
+          <a class="button secondary mt-s" href="#reservation">S'inscrire</a>
+        </article>
+        <article class="card">
+          <img src="assets/formation-1.jpg" alt="Formation Dig Deeper" style="width:100%;height:auto;border-radius:12px 12px 0 0;object-fit:cover;max-height:160px;" />
+          <h3>Dig Deeper</h3>
+          <p>La technique d'approfondissement pour identifier l'origine des blocages rapidement.</p>
+          <p><strong>Prix&nbsp;:</strong> 400€ · <strong>Durée&nbsp;:</strong> 1 jour</p>
+          <a class="button secondary mt-s" href="#reservation">S'inscrire</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservation" class="section">
+    <div class="container">
+      <h2>Réservation en ligne</h2>
+      <p class="intro">Choisissez votre session et validez votre inscription. Vous recevrez une confirmation par email.</p>
+      <div class="reservation-grid card mt-m">
+        <div class="reservation-logo-col">
+          <img src="assets/logo-2-trans.svg" alt="Logo ThetaHealing" style="width:120px;max-width:100%;margin:auto;display:block;" />
+        </div>
+        <div class="reservation-form-col">
+          <form>
+            <label for="formation">Formation</label>
+            <select id="formation" name="formation" required>
+              <option value="">— Sélectionnez —</option>
+              <option>Base</option>
+              <option>Avancé</option>
+              <option>Dig Deeper</option>
+            </select>
+
+            <label for="date">Date</label>
+            <select id="date" name="date" required>
+              <option value="">— Sélectionnez —</option>
+              <option>12–13 Octobre</option>
+              <option>26–28 Octobre</option>
+              <option>9 Novembre</option>
+            </select>
+
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+
+            <a class="button primary mt-s" href="mailto:vous@exemple.com?subject=Inscription%20ThetaHealing&body=Bonjour%2C%20je%20souhaite%20m%27inscrire%20%C3%A0%20la%20formation%20%5BBase%2FAvanc%C3%A9%2FDig%20Deeper%5D%20du%20%5Bdate%5D.%0ANom%3A%20%5Bvotre%20nom%5D%0AEmail%3A%20%5Bvotre%20email%5D%0AMerci%20!">Valider par email</a>
+            <p class="helper">Pour un vrai panier/paiement, connectez Calendly/Stripe/Framadate et remplacez par votre URL.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo-2-trans.svg" alt="Logo ThetaHealing" style="height:28px"/>
+      <p class="mt-s">ThetaHealing — Accompagnement et formations pour transformer votre vie avec douceur et efficacité.</p>
+      <div class="palette">
+        <div class="swatch" title="#EC4899" style="background:#EC4899"></div>
+        <div class="swatch" title="#8B5CF6" style="background:#8B5CF6"></div>
+        <div class="swatch" title="#FFE4EF" style="background:#FFE4EF"></div>
+        <div class="swatch" title="#EDE9FE" style="background:#EDE9FE"></div>
+      </div>
+    </div>
+    <div>
+      <h3>Navigation</h3>
+      <p><a href="index.html">Accueil</a><br/>
+      <a href="formations.html">Formations</a><br/>
+      <a href="qui-je-suis.html">Qui je suis</a></p>
+    </div>
+    <div>
+      <h3>Newsletter</h3>
+      <form data-demo="newsletter" action="https://example.com/newsletter" method="post">
+        <label for="nl-email">Votre email</label>
+        <input id="nl-email" type="email" name="email" placeholder="vous@exemple.com" required>
+        <button class="button primary" type="submit">S'inscrire</button>
+        <p class="helper">Remplacez l'URL d'action par votre outil d'emailing.</p>
+      </form>
+    </div>
+  </div>
+  <div class="container mt-m">
+    <small>© 2025 ThetaHealing · <a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></small>
+  </div>
+</footer>
+</body>
+</html>
