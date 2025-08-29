@@ -1,0 +1,99 @@
+/* Reservation section responsive 2-column grid */
+.reservation-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+.reservation-logo-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reservation-form-col {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .reservation-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem;
+  }
+  .reservation-logo-col {
+    margin-bottom: 1.5rem;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink-700);
+  background: var(--paper-2);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  /* font-family: Poppins, Inter, Arial, sans-serif; */
+  font-family: 'Playfair Display', Inter, Arial, sans-serif;
+  color: var(--ink-900);
+  margin: 0 0 .6rem 0;
+  line-height: 1.25;
+}
+
+p { margin: 0 0 1rem; }
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+
+
+/* Sections */
+.section { padding: 56px 0; }
+.section .intro { max-width: 70ch; color: var(--ink-500); }
+
+.grid { display: grid; gap: 1rem; }
+.grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px){ .grid.cols-3 { grid-template-columns: 1fr; } }
+@media (max-width: 900px){ .grid.cols-2 { grid-template-columns: 1fr; } }
+
+
+
+/* Forms */
+form { display:grid; gap:.7rem; }
+input, textarea, select {
+  padding: .85rem 1rem;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 12px;
+  background: #fff;
+  font: inherit;
+  outline: none;
+}
+input:focus, textarea:focus, select:focus { border-color: var(--violet-500); box-shadow: 0 0 0 3px rgba(139,92,246,.15); }
+
+label { font-weight: 600; }
+.helper { color: var(--ink-500); font-size:.9rem; }
+
+/* Footer */
+footer { padding: 32px 0 56px; border-top: 1px solid rgba(0,0,0,.08); background: #fff; }
+.footer-grid { display:grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; }
+@media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr; } }
+.footer-brand p { color: var(--ink-500); }
+.footer small { color: var(--ink-500); }
+
+.palette { display:flex; gap:.4rem; margin-top:.6rem; }
+.swatch { width:22px; height:22px; border-radius:5px; border:1px solid rgba(0,0,0,.1);}
+.swatch[title*="#"]::after { content: attr(title); position:absolute; clip: rect(0,0,0,0); }
+
+/* Utilities */
+.muted { color: var(--ink-500); }
+.text-center { text-align:center; }
+.mt-s { margin-top: .5rem; }
+.mt-m { margin-top: 1rem; }
+.mt-l { margin-top: 2rem; }

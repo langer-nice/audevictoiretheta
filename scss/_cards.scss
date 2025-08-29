@@ -1,0 +1,115 @@
+.card {
+  background: var(--paper);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+.card h3 { margin-bottom: .4rem; }
+.badge {
+  display:inline-flex; align-items:center; gap:.4rem;
+  background: var(--violet-50); color: var(--ink-900);
+  padding: .25rem .6rem; border-radius: 999px; font-weight: 600; font-size: .85rem;
+}
+
+.kpis { display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; margin-top:1rem; }
+.kpis .card strong { font-size: 1.6rem; }
+@media (max-width: 800px){ .kpis { grid-template-columns: 1fr; } }
+
+
+#mes-formations {
+
+    .content-cache {
+        // margin-top: 2rem;
+        // 
+    }
+  
+}
+
+
+  #mes-formations .content-cache {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1);
+    opacity: 0.7;
+  }
+  #mes-formations .card.open .content-cache {
+    max-height: 2000px;
+    opacity: 1;
+    transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+  }
+  #mes-formations .show-more {
+    display: inline-block;
+    margin-top: .5rem;
+    color: #8B5CF6;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+
+  // CARDS FORMATION 
+
+  #programme {
+    .date-person {
+      display:flex;
+      gap:1.5rem;
+      margin:1rem 0 0.5rem 0;
+      align-items:center;
+      
+    }
+
+    .info-programme {
+      margin:1.2rem 0 0.5rem 0;      
+    }
+
+    .programme-ttile {
+      font-weight:600;
+      font-size:0.98em;
+      color:#666;
+      letter-spacing:0.02em;
+    }
+    .programme-list {
+      list-style:none;
+      padding:0;
+      margin:0.5em 0 0 0;
+
+      li {
+
+        margin-bottom:0.2em;
+
+        i {
+          margin-right:0.5em;
+        }
+
+        .supp-info {
+          color:#888;
+          font-size:0.97em;
+          margin-left:1.7em;
+        }
+      }
+
+      
+    }
+    .programme-list.programme li i {color:#4ade80;}
+
+    .price-panel {
+      margin:1.5em 0 0.5em 0;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+
+      .price {
+        font-size:2rem;
+        font-weight:700;
+        color:#a21caf;
+      }
+
+      .price-info {
+        color:#888;
+        font-size:1em;
+        margin-left:0.5em;
+      }
+    }
+  }
+
+  

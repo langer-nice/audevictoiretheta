@@ -1,6 +1,12 @@
 // Main SCSS entry point
+@import 'base';
 @import 'colors';
 @import 'buttons';
 @import 'navigation';
+@import 'footer';
+@import 'hero';
+@import 'cards';
+
+
 
 // Add the rest of your site styles here, splitting into more partials as needed.
