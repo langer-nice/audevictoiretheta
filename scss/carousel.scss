@@ -1,0 +1,90 @@
+$bg-primary: #1a202c;
+$text-color: #e2e8f0;
+$card-bg: #4a5568;
+$card-hover-bg: #2d3748;
+$gray-700: #4a5568;
+$gray-600: #2d3748;
+
+.caroursel-holder {
+   position: relative;
+   overflow: hidden;
+}
+
+.carousel-track {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.card {
+flex: 0 0 100%;
+padding: 1rem;
+margin-right: 1rem;
+max-width: 100%;
+
+// Media query to display three cards on larger screens
+@media (min-width: 768px) {
+    flex: 0 0 calc(33.3333% - 0.6666rem);
+}
+
+.card-content {
+  background-color: $gray-700;
+  padding: 1.5rem; // p-6
+  border-radius: 0.5rem; // rounded-lg
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); // shadow-md
+  
+  .card-image {
+    width: 100%;
+    height: 12rem; // h-48
+    object-fit: cover;
+    border-radius: 0.5rem; // rounded-lg
+    margin-bottom: 1rem; // mb-4
+  }
+
+  h2 {
+    font-size: 1.25rem; // text-xl
+    font-weight: 600; // font-semibold
+    margin-bottom: 0.5rem; // mb-2
+  }
+
+  p {
+    color: #a0aec0; // text-gray-400
+  }
+}
+
+}
+
+
+
+
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  width: 3rem; // w-12
+  height: 3rem; // h-12
+  transform: translateY(-50%);
+  background-color: $gray-700;
+  color: #fff;
+  padding: 0.75rem; // p-3
+  border-radius: 9999px; // rounded-full
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); // shadow-lg
+  transition-property: background-color; // transition-colors
+  transition-duration: 200ms; // duration-200
+
+  &:hover {
+      background-color: $gray-600;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.prev-btn {
+      left: 1rem; // left-4
+  }
+
+  &.next-btn {
+      right: 1rem; // right-4
+  }
+
+}
