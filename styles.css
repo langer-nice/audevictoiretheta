@@ -210,6 +210,8 @@ footer {
   --radius: 16px;
   --shadow: 0 8px 30px rgba(15,16,32,.08);
   --grad: linear-gradient(135deg, var(--rose-500), var(--violet-500));
+  --disable: #eaeaea;
+  --disable-text: #bbbbbb;
 }
 
 .button {
@@ -549,6 +551,13 @@ footer {
 }
 .carousel-nav-btn:hover {
   background-color: #2d3748;
+}
+.carousel-nav-btn:disabled {
+  box-shadow: none;
+  border: none;
+  background-color: var(--disable) !important; /* light grey background */
+  color: var(--disable-text) !important; /* grey text */
+  cursor: not-allowed !important;
 }
 .carousel-nav-btn:focus {
   outline: none;

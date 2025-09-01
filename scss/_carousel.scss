@@ -71,9 +71,23 @@ max-width: 100%;
   transition-property: background-color; // transition-colors
   transition-duration: 200ms; // duration-200
 
+      // &.disabled {
+      //     background-color: darken($gray-700, 5%) !important;
+      //     cursor: not-allowed !important;
+      // }
+
   &:hover {
       background-color: $gray-600;
   }
+
+  &:disabled {
+          box-shadow: none; 
+          border: none;
+          background-color: var(--disable) !important;   /* light grey background */
+          color: var(--disable-text) !important; /* grey text */
+          cursor: not-allowed !important;
+  }
+
 
   &:focus {
     outline: none;
@@ -81,6 +95,8 @@ max-width: 100%;
 
   &.prev-btn {
       left: 1rem; // left-4
+
+
   }
 
   &.next-btn {
