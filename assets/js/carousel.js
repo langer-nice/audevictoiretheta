@@ -6,7 +6,6 @@ const cards = Array.from(carouselTrack.children);
 let currentIndex = 0;
 let startX, startY, endX;
 const swipeThreshold = 50; // Minimum distance to register a swipe
-const gap = 16; // 1rem in px
 
 function getNumVisibleCards() {
   return window.innerWidth < 768 ? 1 : 3;
@@ -27,21 +26,20 @@ function updateButtons() {
   prevBtn.setAttribute('aria-disabled', String(atStart));
   nextBtn.setAttribute('aria-disabled', String(atEnd));
 
-  // Add/remove styling hook class when disabled
+  // Styling hook for disabled state
   prevBtn.classList.toggle('diabled', atStart);
   nextBtn.classList.toggle('diabled', atEnd);
 }
 
-// Function to update the carousel position
+// Function to update the carousel position (align by exact card offset)
 function updateCarousel() {
-  const cardWidth = cards[0].offsetWidth;
-  const maxIndex = getMaxIndex();
+  if (!cards.length) return;
 
-  // Clamp to bounds (no looping)
+  const maxIndex = getMaxIndex();
   currentIndex = Math.min(Math.max(currentIndex, 0), maxIndex);
 
-  const translateValue = -(currentIndex * (cardWidth + gap));
-  carouselTrack.style.transform = `translateX(${translateValue}px)`;
+  const targetOffset = cards[currentIndex]?.offsetLeft || 0;
+  carouselTrack.style.transform = `translateX(${-targetOffset}px)`;
 
   updateButtons();
 }
