@@ -66,6 +66,17 @@ p {
     grid-template-columns: 1fr;
   }
 }
+.flex {
+  display: grid; /* Enables a grid layout */
+  grid-template-columns: 2fr 1fr; /* Creates two equal columns */
+  gap: 16px; /* Optional: Adds space between the divs */
+}
+
+.flex img {
+  width: 100%; /* Makes the image take up the full width of its grid cell */
+  height: auto; /* Maintains the image's aspect ratio */
+}
+
 /* Forms */
 form {
   display: grid;
@@ -420,22 +431,22 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-#mes-accompagnement .content-cache {
+.content-cache {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.7;
 }
 
-#mes-accompagnement .card.open .content-cache {
+.card.open .content-cache {
   max-height: 2000px;
   opacity: 1;
   transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
 }
 
-#mes-accompagnement .show-more {
+.show-more {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
   color: #8B5CF6;
   cursor: pointer;
   text-decoration: underline;
@@ -479,6 +490,12 @@ footer {
   color: #888;
   font-size: 1em;
   margin-left: 0.5em;
+}
+
+.card-emphasis {
+  background-color: var(--violet-100);
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 .caroursel-holder {

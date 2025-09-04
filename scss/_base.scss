@@ -37,6 +37,19 @@ p { margin: 0 0 1rem; }
 @media (max-width: 900px){ .grid.cols-2 { grid-template-columns: 1fr; } }
 
 
+.flex {
+  display: grid; /* Enables a grid layout */
+  grid-template-columns: 2fr 1fr; /* Creates two equal columns */
+  gap: 16px; /* Optional: Adds space between the divs */
+}
+
+.flex img {
+  width: 100%; /* Makes the image take up the full width of its grid cell */
+  // width: auto; 
+  height: auto; /* Maintains the image's aspect ratio */
+}
+
+
 
 /* Forms */
 form { display:grid; gap:.7rem; }
@@ -99,3 +112,4 @@ footer { padding: 32px 0 56px; border-top: 1px solid rgba(0,0,0,.08); background
     margin-bottom: 1.5rem;
   }
 }
+

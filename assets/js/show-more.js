@@ -1,13 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('#mes-formations .show-more').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
+  // Event delegation so it works on any page and with dynamically added content
+  document.addEventListener('click', function(e) {
+    const btn = e.target.closest('.show-more');
+    if (!btn) return;
+
+    // Prevent default for anchors/buttons
+    if (btn.tagName === 'A' || btn.tagName === 'BUTTON') {
       e.preventDefault();
-      const card = btn.closest('.card');
-      card.classList.toggle('open');
-      // Optionally scroll into view
-      if(card.classList.contains('open')) {
-        setTimeout(() => card.scrollIntoView({behavior:'smooth', block:'center'}), 350);
-      }
-    });
-  });
+    }
+
+    const card = btn.closest('.card');
+    if (!card) return;
+
+    const willOpen = !card.classList.contains('open');
+    card.classList.toggle('open', willOpen);
+    btn.setAttribute('aria-expanded', String(willOpen));
+
+    // Smoothly center the opened card after CSS transition
+    if (willOpen) {
+      setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 350);
+    }
+  }, false);
 });
