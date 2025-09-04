@@ -1,32 +1,3 @@
-/* Reservation section responsive 2-column grid */
-.reservation-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2.5rem;
-  align-items: flex-start;
-  padding: 2rem 1rem;
-}
-
-.reservation-logo-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.reservation-form-col {
-  width: 100%;
-}
-
-@media (max-width: 800px) {
-  .reservation-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem 0.5rem;
-  }
-  .reservation-logo-col {
-    margin-bottom: 1.5rem;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -190,6 +161,35 @@ footer {
   margin-top: 2rem;
 }
 
+/* Reservation section responsive 2-column grid */
+.reservation-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.reservation-logo-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-form-col {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .reservation-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem;
+  }
+  .reservation-logo-col {
+    margin-bottom: 1.5rem;
+  }
+}
 :root {
   --rose-50: #FFF1F7;
   --rose-100: #FFE4EF;
@@ -420,20 +420,20 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-#mes-formations .content-cache {
+#mes-accompagnement .content-cache {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0.7;
 }
 
-#mes-formations .card.open .content-cache {
+#mes-accompagnement .card.open .content-cache {
   max-height: 2000px;
   opacity: 1;
   transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
 }
 
-#mes-formations .show-more {
+#mes-accompagnement .show-more {
   display: inline-block;
   margin-top: 0.5rem;
   color: #8B5CF6;
@@ -495,11 +495,13 @@ footer {
 .caroursel-holder {
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  gap: 1rem;
 }
 
 .card {
@@ -557,6 +559,41 @@ footer {
 }
 .carousel-nav-btn:focus {
   outline: none;
+}
+
+.sib-form {
+  padding: 0 !important;
+  font-family: Inter !important;
+}
+
+#sib-container {
+  background: none !important;
+  padding: 0 !important;
+}
+
+.sib-form-block {
+  padding: 0 !important;
+}
+
+.sib-form .entry__field {
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: none !important;
+  border-radius: 12px;
+}
+.sib-form .entry__field input {
+  width: 100%;
+  padding: 0.5rem 1rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px !important;
+  background: #fff !important;
+  font: inherit !important;
+  outline: none !important;
+}
+
+.sib-form .input {
+  box-shadow: none;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

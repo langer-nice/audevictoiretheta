@@ -1,0 +1,44 @@
+.sib-form {
+    padding: 0 !important;
+    font-family: Inter !important;
+}
+
+#sib-container {
+    background: none !important;
+    padding: 0 !important   ;
+}
+
+.sib-form-block {
+    padding: 0 !important;
+}
+
+// FORM 
+
+.sib-form .entry__field {
+    // -webkit-align-items: center;
+    // align-items: center;
+    background: transparent !important;
+    border: 1px solid rgba(0,0,0,.12);
+    border: none !important;
+    border-radius: 12px;
+    // border-radius: 3px;
+    // display: -webkit-inline-flex;
+    // display: inline-flex;
+    // margin: .25rem 0;
+    // max-width: 100%;
+
+    input {
+        width: 100%;
+        padding: .5rem 1rem !important;
+        border: 1px solid rgba(0,0,0,.12) !important;
+        border-radius: 12px !important;
+        background: #fff !important;
+        font: inherit !important;
+        outline: none !important;
+    }
+}
+
+.sib-form .input {
+    box-shadow: none;
+    padding: 0;
+}
