@@ -16,6 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
     card.classList.toggle('open', willOpen);
     btn.setAttribute('aria-expanded', String(willOpen));
 
+    // Toggle button label text
+    const label = btn.querySelector('span');
+    if (label) {
+      label.textContent = willOpen ? 'Lire moins' : 'Lire plus';
+    }
+
+    // Toggle icon between plus and minus
+    const icon = btn.querySelector('i');
+    if (icon) {
+      icon.classList.toggle('fa-plus', !willOpen);
+      icon.classList.toggle('fa-minus', willOpen);
+    }
+
     // Smoothly center the opened card after CSS transition
     if (willOpen) {
       setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 350);
