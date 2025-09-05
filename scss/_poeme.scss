@@ -1,0 +1,30 @@
+#poem {
+    background-color: var(--rose-100);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        cite {
+            font-size: 1.2rem;
+            line-height: 2;
+            font-style: italic;
+            // color: darken($primary-color, 10%);
+            
+            strong {
+                font-weight: bold;
+                color: var(--rose-600);
+                font-size: 1.3rem;
+            }
+        }
+
+        .author {
+            margin-top: rem;
+            text-align: right;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--ink-700);
+        }
+}
+}
