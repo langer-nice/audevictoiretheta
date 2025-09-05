@@ -630,14 +630,13 @@ footer {
 
 #poem {
   background-color: var(--rose-100);
-  height: 50vh;
+  padding: 3rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #poem .container cite {
-  font-size: 1.2rem;
-  line-height: 2;
+  font-size: 1rem;
   font-style: italic;
 }
 #poem .container cite strong {
@@ -646,7 +645,7 @@ footer {
   font-size: 1.3rem;
 }
 #poem .container .author {
-  margin-top: rem;
+  margin-top: 1.5rem;
   text-align: right;
   font-weight: bold;
   font-style: italic;
