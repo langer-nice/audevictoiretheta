@@ -229,20 +229,28 @@ footer {
   display: inline-block;
   padding: 0.8rem 1.1rem;
   border-radius: 14px;
+  border: none;
   text-decoration: none;
   font-weight: 700;
   transition: transform 0.08s ease;
 }
 .button.primary {
   background: var(--grad);
-  color: white;
+  color: var(--rose-50);
   box-shadow: var(--shadow);
+}
+.button.primary:hover {
+  filter: brightness(1.2);
+  color: var(--rose-50);
 }
 .button.secondary {
   background: var(--paper-2);
   color: var(--ink-900);
   box-shadow: var(--shadow);
   border: 1px solid var(--ink-300);
+}
+.button.secondary:hover {
+  filter: brightness(1.2);
 }
 .button:active {
   transform: translateY(1px);
@@ -265,14 +273,21 @@ footer {
 }
 
 .brand {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.6rem;
+}
+.brand:hover {
+  text-decoration: underline;
 }
 .brand img {
   height: 32px;
   width: auto;
   display: block;
+}
+.brand strong {
+  color: var(--ink-700);
 }
 
 .navlinks {
@@ -280,15 +295,15 @@ footer {
   align-items: center;
   gap: 1rem;
 }
-.navlinks a {
+.navlinks .navlink {
   text-decoration: none;
   color: var(--ink-700);
   font-weight: 600;
   padding: 0.4rem 0.7rem;
   border-radius: 10px;
 }
-.navlinks a:hover, .navlinks a[aria-current=page] {
-  background: var(--violet-50);
+.navlinks .navlink:hover, .navlinks .navlink[aria-current=page] {
+  background: var(--violet-100);
   color: var(--ink-900);
 }
 

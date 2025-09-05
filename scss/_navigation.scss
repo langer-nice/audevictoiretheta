@@ -16,13 +16,22 @@
 }
 
 .brand {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: .6rem;
+  &:hover {
+    text-decoration: underline;
+  }
   & img {
     height: 32px;
     width: auto;
     display: block;
+  }
+  & strong {    
+    color: var(--ink-700);
+    // font-weight: 700;
+    // font-size: 1.25rem;
   }
 }
 
@@ -30,15 +39,19 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  a {
+  
+  .navlink {
+    // background: var(--violet-50);
     text-decoration: none;
     color: var(--ink-700);
     font-weight: 600;
     padding: .4rem .7rem;
     border-radius: 10px;
+  
     &:hover,
     &[aria-current="page"] {
-      background: var(--violet-50);
+      background: var(--violet-100);
+      // filter: brightness(1.2);;
       color: var(--ink-900);
     }
   }

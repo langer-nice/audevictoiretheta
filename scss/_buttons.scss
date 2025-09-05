@@ -3,21 +3,34 @@
   display: inline-block; 
   padding: .8rem 1.1rem;
   border-radius: 14px;
+  border: none;
   text-decoration: none;
   font-weight: 700;
   transition: transform .08s ease;
+  
   &.primary {
     background: var(--grad);
-    color: white;
+    color: var(--rose-50);
     box-shadow: var(--shadow);
+
+    &:hover {
+      filter: brightness(1.2);
+      color: var(--rose-50);
+    } 
   }
+
   &.secondary {
     background: var(--paper-2);
     color: var(--ink-900);
     box-shadow: var(--shadow);
     border: 1px solid var(--ink-300);
+
+    &:hover {
+      filter: brightness(1.2);
+    } 
   }
   &:active {
     transform: translateY(1px);
   }
+  
 }
