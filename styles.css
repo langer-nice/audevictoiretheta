@@ -373,7 +373,7 @@ footer {
 /* Hero */
 .hero {
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/img/hero-bg.jpg") center center/cover no-repeat, radial-gradient(1200px 600px at 100% -10%, var(--rose-100), transparent 60%), radial-gradient(1200px 600px at 0% 110%, var(--violet-100), transparent 60%);
-  min-height: 85vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   padding: 0;
@@ -385,7 +385,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 7vw 1rem;
 }
 
@@ -404,10 +404,11 @@ footer {
 }
 
 .hero-cta {
-  margin-top: 1.25rem;
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
