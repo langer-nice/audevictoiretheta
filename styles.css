@@ -56,6 +56,10 @@ p {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.gap-2 {
+  gap: 2rem;
+}
+
 @media (max-width: 900px) {
   .grid.cols-3 {
     grid-template-columns: 1fr;
@@ -434,7 +438,7 @@ footer {
 
 .kpis {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -448,6 +452,34 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.kpis .kpi {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--paper);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+
+.kpis .kpi .value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.kpis .kpi .value.violet {
+  color: var(--violet-600);
+}
+
+.kpis .kpi .value.rose {
+  color: var(--rose-500);
+}
+
+.kpis .kpi .label {
+  color: var(--ink-500);
+  font-size: 1.05rem;
+}
+
 .content-cache {
   max-height: 0;
   overflow: hidden;
@@ -664,8 +696,9 @@ footer {
   right: 0.5rem;
 }
 #poem .container cite strong {
-  font-weight: bold;
-  color: var(--rose-600);
+  background-image: linear-gradient(90deg, var(--rose-500), var(--violet-500));
+  background-clip: text;
+  color: transparent;
   font-size: 1.3rem;
 }
 #poem .container .author {

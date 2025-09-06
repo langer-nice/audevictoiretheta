@@ -14,9 +14,28 @@
   padding: .25rem .6rem; border-radius: 999px; font-weight: 600; font-size: .85rem;
 }
 
-.kpis { display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; margin-top:1rem; }
+.kpis { display:grid; grid-template-columns: repeat(2,1fr); gap:1rem; margin-top:1rem; }
 .kpis .card strong { font-size: 1.6rem; }
 @media (max-width: 800px){ .kpis { grid-template-columns: 1fr; } }
+
+
+// KPI tiles used in #mon-approche
+.kpis .kpi {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: var(--paper);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+.kpis .kpi .value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: .75rem;
+}
+.kpis .kpi .value.violet { color: var(--violet-600); }
+.kpis .kpi .value.rose { color: var(--rose-500); }
+.kpis .kpi .label { color: var(--ink-500); font-size: 1.05rem; }
 
 
 

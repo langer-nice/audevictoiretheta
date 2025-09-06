@@ -39,8 +39,9 @@
             }
             
             strong {
-                font-weight: bold;
-                color: var(--rose-600);
+                background-image: linear-gradient(90deg, var(--rose-500), var(--violet-500));
+                background-clip: text;
+                color: transparent;
                 font-size: 1.3rem;
             }
         }
