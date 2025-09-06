@@ -672,7 +672,12 @@ footer {
   font-style: italic;
   position: relative;
   display: block;
-  padding: 2rem 3.5rem;
+  padding: 1rem 0;
+}
+@media (min-width: 900px) {
+  #poem .container cite {
+    padding: 2rem 3.5rem;
+  }
 }
 #poem .container cite::before, #poem .container cite::after {
   position: absolute;

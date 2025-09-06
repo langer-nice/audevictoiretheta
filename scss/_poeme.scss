@@ -12,7 +12,10 @@
             // color: darken($primary-color, 10%);
             position: relative;
             display: block;
-            padding: 2rem 3.5rem; // room for decorative quotes
+            padding: 1rem 0; // room for decorative quotes
+            @media (min-width: 900px){
+                padding: 2rem 3.5rem; 
+            }
 
             // Decorative Font Awesome quotes as background-like elements
             &::before,
