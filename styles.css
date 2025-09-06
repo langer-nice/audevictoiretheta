@@ -386,7 +386,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 7vw 0;
+  padding: 7vw 1rem;
 }
 
 .hero .headline {
