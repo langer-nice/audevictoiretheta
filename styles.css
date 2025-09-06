@@ -630,7 +630,7 @@ footer {
 
 #poem {
   background-color: var(--rose-100);
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -638,6 +638,30 @@ footer {
 #poem .container cite {
   font-size: 1rem;
   font-style: italic;
+  position: relative;
+  display: block;
+  padding: 2rem 3.5rem;
+}
+#poem .container cite::before, #poem .container cite::after {
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--rose-300);
+  opacity: 0.35;
+  pointer-events: none;
+  content: "";
+}
+#poem .container cite::before {
+  content: "\f10d";
+  top: -0.5rem;
+  left: 0.5rem;
+}
+#poem .container cite::after {
+  content: "\f10e";
+  bottom: -0.5rem;
+  right: 0.5rem;
 }
 #poem .container cite strong {
   font-weight: bold;

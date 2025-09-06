@@ -1,16 +1,42 @@
 #poem {
     background-color: var(--rose-100);
     // height: 50vh;
-    padding: 3rem 1rem;    
+    padding: 4rem 1rem;    
     display: flex;
     align-items: center;
     justify-content: center;
     .container {
         cite {
             font-size: 1rem;
-            // line-height: 2;
             font-style: italic;
             // color: darken($primary-color, 10%);
+            position: relative;
+            display: block;
+            padding: 2rem 3.5rem; // room for decorative quotes
+
+            // Decorative Font Awesome quotes as background-like elements
+            &::before,
+            &::after {
+                position: absolute;
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900; // solid style
+                font-size: 4rem;
+                line-height: 1;
+                color: var(--rose-300);
+                opacity: 0.35;
+                pointer-events: none;
+                content: "";
+            }
+            &::before {
+                content: "\f10d"; // fa-quote-left
+                top: -0.5rem;
+                left: 0.5rem;
+            }
+            &::after {
+                content: "\f10e"; // fa-quote-right
+                bottom: -0.5rem;
+                right: 0.5rem;
+            }
             
             strong {
                 font-weight: bold;
