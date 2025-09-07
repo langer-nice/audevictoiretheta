@@ -62,6 +62,10 @@ $gray-600: #2d3748;
   display: flex;
   gap: 1rem;
   justify-content: center;
+
+    @media (max-width: 768px) {  
+      .button {flex-grow: 0;}
+  }
 }
 
 .carousel-nav-btn {

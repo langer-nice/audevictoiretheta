@@ -607,6 +607,11 @@ footer {
   gap: 1rem;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  #temoignages .button-holder .button {
+    flex-grow: 0;
+  }
+}
 
 .carousel-nav-btn {
   width: 3rem;
