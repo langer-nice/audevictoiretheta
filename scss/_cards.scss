@@ -16,7 +16,7 @@
 
 .kpis { display:grid; grid-template-columns: repeat(2,1fr); gap:1rem; margin-top:1rem; }
 .kpis .card strong { font-size: 1.6rem; }
-@media (max-width: 800px){ .kpis { grid-template-columns: 1fr; } }
+@media (max-width: 768px){ .kpis { grid-template-columns: 1fr; } }
 
 
 // KPI tiles used in #mon-approche

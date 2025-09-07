@@ -60,12 +60,12 @@ p {
   gap: 2rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .grid.cols-3 {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .grid.cols-2 {
     grid-template-columns: 1fr;
   }
@@ -117,14 +117,14 @@ footer {
   background: #fff;
 }
 
-.footer-grid {
+.footer {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 1rem;
 }
 
-@media (max-width: 900px) {
-  .footer-grid {
+@media (max-width: 768px) {
+  .footer {
     grid-template-columns: 1fr;
   }
 }
@@ -195,7 +195,7 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .reservation-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -205,6 +205,15 @@ footer {
     margin-bottom: 1.5rem;
   }
 }
+.hr {
+  height: 1px;
+  margin: -0.5em 0;
+  padding: 0;
+  color: #F00;
+  background-color: var(--violet-300);
+  border: 0;
+}
+
 :root {
   --rose-50: #FFF1F7;
   --rose-100: #FFE4EF;
@@ -331,7 +340,7 @@ footer {
   font-size: 1.25rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .navlinks {
     display: none;
   }
@@ -354,8 +363,8 @@ footer {
   height: 90px;
 }
 
-@media (max-width: 900px) {
-  .footer-grid > div,
+@media (max-width: 768px) {
+  .footer > div,
   .footer-brand,
   .footer-social,
   .small-print {
@@ -391,6 +400,18 @@ footer {
   color: #DB2777;
 }
 
+@media (max-width: 768px) {
+  .footer .sib-form .entry__label,
+  .footer .sib-form .entry__specification {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .footer .hr, .footer br {
+    display: none;
+  }
+}
 /* Hero */
 .hero {
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/img/hero-bg.jpg") center center/cover no-repeat, radial-gradient(1200px 600px at 100% -10%, var(--rose-100), transparent 60%), radial-gradient(1200px 600px at 0% 110%, var(--violet-100), transparent 60%);
@@ -461,7 +482,7 @@ footer {
   font-size: 1.6rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .kpis {
     grid-template-columns: 1fr;
   }
@@ -704,7 +725,7 @@ footer {
   display: block;
   padding: 1rem 0;
 }
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   #poem .container cite {
     padding: 2rem 3.5rem;
   }

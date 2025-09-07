@@ -2,8 +2,8 @@
   height: 90px;
 }
 
-@media (max-width: 900px) {
-  .footer-grid > div,
+@media (max-width: 768px) {
+  .footer > div,
   .footer-brand,
   .footer-social,
   .small-print {
@@ -28,3 +28,23 @@
   .footer-social .fa-tiktok { color: #111; }
   .footer-social .fa-instagram { color: #8B5CF6; }
   .footer-social .social-link:hover .fa-brands { color: #DB2777; }
+
+
+@media (max-width: 768px) {
+  .footer .sib-form .entry__label,
+  .footer .sib-form .entry__specification {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  .footer {
+    .hr, br {
+    display: none;
+  }
+  }
+   
+}

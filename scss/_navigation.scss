@@ -75,7 +75,7 @@
   font-size: 1.25rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .navlinks { display: none; }
   .mobile-toggle { display: inline-flex; }
   .navlinks.open {
