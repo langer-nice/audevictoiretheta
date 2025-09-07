@@ -1,7 +1,28 @@
+.footer-logo {
+  height: 90px;
+}
+
+@media (max-width: 900px) {
+  .footer-grid > div,
+  .footer-brand,
+  .footer-social,
+  .small-print {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.footer-social {
+  display: flex;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
 .footer-social .fa-brands {
     font-size: 1.7rem;
     color: #8B5CF6;
     transition: color 0.2s;
+  
   }
   .footer-social .fa-youtube { color: #EC4899; }
   .footer-social .fa-tiktok { color: #111; }
