@@ -124,5 +124,20 @@
   flex-grow: 1;
   align-items: flex-end;
   display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
 
-}
+  // .button {
+  //   flex-grow: 1;
+  //   text-align: center;
+  // }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+
+    .button {
+    flex-grow: 1;
+    text-align: center;
+  }
+  }
+} 
