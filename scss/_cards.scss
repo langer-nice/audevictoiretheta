@@ -94,19 +94,21 @@
     .programme-list.programme li i {color:#4ade80;}
 
     .price-panel {
-      margin:1.5em 0 0.5em 0;
+      margin: 0.5em 0;
       display:flex;
       align-items:center;
       justify-content:space-between;
+      flex-grow: 1;
+      align-items: flex-end;
 
       .price {
         font-size:2rem;
         font-weight:700;
-        color:#a21caf;
+        color: var(--violet-600);
       }
 
       .price-info {
-        color:#888;
+        color: var(--ink-300);
         font-size:1em;
         margin-left:0.5em;
       }
@@ -121,7 +123,7 @@
 
 .button-holder {
   // outline: 1px solid;
-  flex-grow: 1;
+  // flex-grow: 1;
   align-items: flex-end;
   display: flex;
   flex-wrap: wrap;

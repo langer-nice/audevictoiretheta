@@ -560,18 +560,20 @@ footer {
   color: #4ade80;
 }
 #programme .price-panel {
-  margin: 1.5em 0 0.5em 0;
+  margin: 0.5em 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-grow: 1;
+  align-items: flex-end;
 }
 #programme .price-panel .price {
   font-size: 2rem;
   font-weight: 700;
-  color: #a21caf;
+  color: var(--violet-600);
 }
 #programme .price-panel .price-info {
-  color: #888;
+  color: var(--ink-300);
   font-size: 1em;
   margin-left: 0.5em;
 }
@@ -583,7 +585,6 @@ footer {
 }
 
 .button-holder {
-  flex-grow: 1;
   align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
