@@ -43,8 +43,16 @@ p {
   padding: 56px 0;
 }
 
-#section-intro {
+#section-intro,
+#section-video {
   text-align: center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+#section-video {
+  background-color: var(--rose-50);
 }
 
 .section .intro {
@@ -371,6 +379,10 @@ footer {
 }
 .footer-logo {
   height: 90px;
+}
+
+.footer-links a {
+  display: block;
 }
 
 @media (max-width: 768px) {
