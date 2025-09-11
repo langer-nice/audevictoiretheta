@@ -356,6 +356,7 @@ footer {
   background: transparent;
   border: none;
   font-size: 1.25rem;
+  color: var(--grad);
 }
 
 @media (max-width: 768px) {
