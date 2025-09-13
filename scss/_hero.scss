@@ -1,10 +1,8 @@
 /* Hero */
 .hero {
-  background:
-    linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
-    url('assets/img/hero-bg.jpg') center center/cover no-repeat,
-    radial-gradient(1200px 600px at 100% -10%, var(--rose-100), transparent 60%),
-    radial-gradient(1200px 600px at 0% 110%, var(--violet-100), transparent 60%);
+  background: #FFF1F7;
+  // background: radial-gradient(circle, rgba(255, 241, 247, 1) 0%, rgba(255, 228, 239, 1) 100%);
+  background: radial-gradient(circle,rgba(255, 241, 247, 1) 0%, rgba(245, 218, 229, 1) 100%);
   min-height: 70vh;
   display: flex;
   align-items: center;
