@@ -73,59 +73,73 @@
     </div>
   </section>
 
-  <section class="section"  id="section-video">
-    <div class="container">
-      <h2>Vidéos</h2>
-      <p class="intro">Quelques contenus YouTube pour découvrir ma voix et mon approche.</p>
-      <div class="grid cols-2 mt-m">
-        <div class="card">
-          <div class="video-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;">
-            <!-- Remplacez l'ID de la vidéo -->
-                <iframe width="560" height="315" 
-                  src="https://www.youtube.com/embed/uwmu-AeGgjk?si=660WgzxZnxVmYzg6&amp;controls=0"
-              title="YouTube video" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
-          </div>
-        </div>
-        <div class="card">
-          <div class="video-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7lC82vT0ueQ?si=vZMj8YSzDUz9C622&amp;controls=0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+<section class="section" id="section-video">
+  <div class="container">
+    <h2>Vidéos</h2>
+    <p class="intro">Quelques contenus YouTube pour découvrir ma voix et mon approche.</p>
+    <div class="grid cols-2 mt-m">
+
+      <!-- Video Card 1 -->
+      <div class="card">
+        <div class="video-wrapper" 
+             style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;cursor:pointer;"
+             onclick="loadVideo(this, 'uwmu-AeGgjk')">
+          <img src="https://img.youtube.com/vi/uwmu-AeGgjk/hqdefault.jpg" 
+               alt="Video thumbnail" 
+               style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;">
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+                      background:rgba(0,0,0,0.6);border-radius:50%;padding:20px;">
+            ▶
           </div>
         </div>
       </div>
+
+      <!-- Video Card 2 -->
+      <div class="card">
+        <div class="video-wrapper" 
+             style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;cursor:pointer;"
+             onclick="loadVideo(this, '7lC82vT0ueQ')">
+          <img src="https://img.youtube.com/vi/7lC82vT0ueQ/hqdefault.jpg" 
+               alt="Video thumbnail" 
+               style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;border-radius:16px;">
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+                      background:rgba(0,0,0,0.6);border-radius:50%;padding:20px;">
+            ▶
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="section">
     <div class="container">
       <h2>Contact</h2>
-      <div class="grid cols-2 mt-m">
-        <div class="card">
-          <!-- <form action="mailto:vous@exemple.com" method="post" enctype="text/plain">
-            <label>Nom</label>
-            <input name="nom" required />
-            <label>Email</label>
-            <input type="email" name="email" required />
-            <label>Message</label>
-            <textarea name="message" rows="5" placeholder="Votre besoin…"></textarea>
-            <button class="button primary" type="submit">Envoyer</button>
-            <p class="helper">Pour une intégration pro, remplacez par Formspree/Getform ou votre back‑end.</p>
-          </form> -->
-        <img src="assets/img/formation--communication-défunts.jpg" alt="Contact Image" style="width: 100%;">
+      <div class="grid cols-3 mt-m contact-cards">
+        <div class="card center">
+          <div class="icon xl" aria-hidden="true">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h3 style="margin-top:0.75rem;">Email</h3>
+          <p><a href="mailto:aude.victoire@hotmail.fr">aude.victoire@hotmail.fr</a></p>
         </div>
-        <div>
-          <h3>Informations</h3>
-          <p><strong>Email&nbsp;:</strong> <a href="mailto:aude.victoire@hotmail.fr">aude.victoire@hotmail.fr</a><br/>
-            <p><strong>Téléphone&nbsp;:</strong> <a href="tel:+33630435927">+33 6 30 43 59 27</a></p>
-          <strong>Disponibilités&nbsp;:</strong> WHATSAPP du lundi au vendredi 10h - 20h</p>
-          <p class="muted">Réponses sous 24–48h ouvrées.</p>
+        <div class="card center">
+          <div class="icon xl" aria-hidden="true">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <h3 style="margin-top:0.75rem;">Téléphone</h3>
+          <p><a href="tel:+33630435927">+33 6 30 43 59 27</a></p>
+        </div>
+        <div class="card center">
+          <div class="icon xl" aria-hidden="true">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 style="margin-top:0.75rem;">Disponibilités</h3>
+          <p>WHATSAPP du lundi au vendredi 10h - 20h</p>
         </div>
       </div>
+      <p class="muted">Réponses sous 24–48h ouvrées.</p>
     </div>
   </section>
 </main>
@@ -251,6 +265,18 @@
   <small>© 2025 ThetaHealing · <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="cgv.html">CGV</a></small>
   </div>
 </footer>
+<script>
+function loadVideo(wrapper, videoId) {
+  wrapper.innerHTML = `
+    <iframe width="560" height="315"
+      src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&controls=1"
+      title="YouTube video" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:16px;">
+    </iframe>`;
+}
+</script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form[data-demo="newsletter"]');

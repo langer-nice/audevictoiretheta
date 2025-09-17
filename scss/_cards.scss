@@ -8,6 +8,12 @@
   flex-direction: column;
 }
 .card h3 {margin: 1.5rem 0 .5rem 0;}
+
+// Centered variant for simple info cards
+.card.center {
+  text-align: center;
+  align-items: center;
+}
 .badge {
   display:inline-flex; align-items:center; gap:.4rem;
   background: var(--violet-50); color: var(--ink-900);
@@ -39,6 +45,23 @@
 
 
 
+
+// Contact cards specific styling
+.contact-cards {
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--violet-50);
+    color: var(--violet-700);
+    i { font-size: 1.25rem; }
+  }
+  a { color: var(--ink-900); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
 
 
   .content-cache {

@@ -30,13 +30,12 @@ p { margin: 0 0 1rem; }
 }
 
 
-
 /* Sections */
 .section { padding: 56px 0; }
 #section-intro,
 #section-video {
   text-align: center; 
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
 }
@@ -138,4 +137,10 @@ footer { padding: 32px 0 56px; border-top: 1px solid rgba(0,0,0,.08); background
   color: #F00;
   background-color: var(--violet-300);
   border: 0;  
+}
+
+.muted {
+  margin: 1rem auto;
+  text-align: center;
+  color: var(--ink-500);
 }

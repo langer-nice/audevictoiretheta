@@ -46,7 +46,7 @@ p {
 #section-intro,
 #section-video {
   text-align: center;
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
 }
@@ -230,6 +230,12 @@ footer {
   color: #F00;
   background-color: var(--violet-300);
   border: 0;
+}
+
+.muted {
+  margin: 1rem auto;
+  text-align: center;
+  color: var(--ink-500);
 }
 
 :root {
@@ -483,6 +489,11 @@ footer {
   margin: 1.5rem 0 0.5rem 0;
 }
 
+.card.center {
+  text-align: center;
+  align-items: center;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -537,6 +548,27 @@ footer {
 .kpis .kpi .label {
   color: var(--ink-500);
   font-size: 1.05rem;
+}
+
+.contact-cards .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--violet-50);
+  color: var(--violet-700);
+}
+.contact-cards .icon i {
+  font-size: 1.25rem;
+}
+.contact-cards a {
+  color: var(--ink-900);
+  text-decoration: none;
+}
+.contact-cards a:hover {
+  text-decoration: underline;
 }
 
 .content-cache {
