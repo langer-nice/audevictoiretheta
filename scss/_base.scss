@@ -84,6 +84,12 @@ input, textarea, select {
 }
 input:focus, textarea:focus, select:focus { border-color: var(--violet-500); box-shadow: 0 0 0 3px rgba(139,92,246,.15); }
 
+// Global link styles
+a, a:link { color: var(--violet-600); text-decoration: none; }
+a:visited { color: var(--violet-600); }
+a:hover { color: var(--violet-500); text-decoration: underline; }
+a:active { color: var(--violet-500); }
+
 label { font-weight: 600; }
 .helper { color: var(--ink-500); font-size:.9rem; }
 
